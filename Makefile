@@ -1,18 +1,18 @@
 CLIB_ROOT = ../../CLIB
-INC = -I./array/ -I./algoithm/
-LNKDIR = -L./lib
-LNK = 
-SRC = ./src/*.cpp
+INC = -I./include/ -I./include/leetcode/
+LNKDIR = -L./lib 
+LNK = -ldl -lpthread -lrt 
+SRC = ./src/*.cpp ./src/leetcode/*.cpp
 CONF = ./conf
 
 CC    = g++
-CFLAG = -g #-O3 -ggdb -Wall -Wno-deprecated 
+CFLAG = -g -std=c++0x
 
 EXE  = test
 
 all:
-    $(CC) $(CFLAG) $(INC) $(LNKDIR) $(SRC) $(LNK) -o $(EXE)
+	$(CC) $(CFLAG) $(INC) $(LNKDIR) $(SRC) $(LNK) -o $(EXE)
 
 clean: 
-    rm -rf *.o
-    rm -rf $(EXE)
+	rm -rf *.o
+	rm -rf $(EXE)
