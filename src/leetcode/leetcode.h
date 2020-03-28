@@ -1,18 +1,7 @@
 #ifndef ___LEETCODE_H___
 #define ___LEETCODE_H___
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <algorithm>
-
-#include <string>
-#include <vector>
-#include <stack>
-#include <unordered_map>
-#include <unordered_set>
-
-using namespace std;
+#include "common.h"
 
 #define PRINT_VECTOR_INT(vec) \
     {for (int i = 0; i < vec.size(); i++) printf("%d\n", vec[i]);}

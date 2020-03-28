@@ -1,5 +1,5 @@
 CLIB_ROOT = ../../CLIB
-INC = -I./include/ -I./include/leetcode/
+INC = -I./include/ -I./include/leetcode/ -I./src/leetcode/
 LNKDIR = -L./lib 
 LNK = -ldl -lpthread -lrt 
 SRC = ./src/*.cpp ./src/leetcode/*.cpp
